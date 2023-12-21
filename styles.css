@@ -1,0 +1,54 @@
+/* font-family: 'League Gothic', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.Main_Section{
+    padding: 70px;
+    background-color: black;
+    height: 750px;
+    position: relative;
+}
+
+.Main_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.Main_Text{
+    
+    position: absolute;
+    top: 50%;
+    right: 38%;
+    text-align: center;
+    color:white;
+    
+}
+
+.Main_Text>h2{
+    font-family: 'League Gothic', sans-serif;
+    line-height: 115px;
+    font-size: 92px;
+    font-weight: 400;
+}
+
+
+
+.Main_Text>h4{
+    
+    font-family: 'League Spartan', sans-serif;
+    font-stretch: expanded;
+    font-weight: 300;
+    line-height: 110px;
+    font-size: 32px
+}
