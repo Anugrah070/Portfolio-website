@@ -10,11 +10,18 @@ font-family: 'Roboto', sans-serif; */
     
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .Main_Section{
+    /* display: block; */
+    opacity: 1;
     padding: 70px;
     background-color: black;
-    height: 750px;
+    height: 950px;
     position: relative;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .Main_navbar{
@@ -27,9 +34,7 @@ font-family: 'Roboto', sans-serif; */
 
 .Main_Text{
     
-    position: absolute;
-    top: 50%;
-    right: 38%;
+    margin-top: 300px;
     text-align: center;
     color:white;
     
@@ -38,7 +43,7 @@ font-family: 'Roboto', sans-serif; */
 .Main_Text>h2{
     font-family: 'League Gothic', sans-serif;
     line-height: 115px;
-    font-size: 92px;
+    font-size: 130px;
     font-weight: 400;
 }
 
@@ -49,6 +54,209 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'League Spartan', sans-serif;
     font-stretch: expanded;
     font-weight: 300;
-    line-height: 110px;
-    font-size: 32px
+    line-height: 100px;
+    font-size: 42px
+}
+
+
+/* MINI ABOUT SECTION */
+
+.MiniAbout_Section{
+
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+    padding: 100px 100px;
+    line-height: 50px;
+}
+
+.mini{
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.MiniAbout_Heading{
+    
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.MiniAbout_Content{
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.MiniAbout_MySkills_ImageBorder{
+    text-align: center;
+    /* border: 4px solid black; */
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.MiniAbout_MySkills_Images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    
+}
+
+.MiniAbout_MySkills_ImageBorder>img{
+    width: 150px;
+    height: 150px;
+}
+
+.MiniAbout_MySkills_ImageBorder>p{
+  
+    font-family: 'Roboto', sans-serif; 
+    font-size: 25px;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin: 150px auto;
+    
+}
+.button-89 {
+    height: 150px;
+    width: 300px;
+    
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.Footer_Section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.Footer_list>ul{
+    margin: 200px 0;
+    display: flex;
+    gap: 80px;
+}
+
+.Footer_list>ul>li{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.Footer_list>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+.Footer_info{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.Footer_info>p{
+    font-size: 20px;
+
+}
+
+
+
+/* MENU PAGE */
+
+.menu_section{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: -100%;
+    padding: 70px;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.menu_section>img{
+    float: right;
+}
+
+.menu_main{
+    font-family: 'League Spartan', sans-serif;
+    margin: 100px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    position:relative;
+}
+
+.menu_list_left{
+    display: flex;
+    gap: 20px;
+}
+
+.menu_list_left>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.menu_list_left>ul>li{
+    
+    font-size: 50px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.menu_list_left>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+
+.rotate{
+    font-size: 37px;
+    font-weight: 500;
+    top: 33px;
+    position: absolute;
+    left: 43px;
+    transform: rotate(-90deg);
+}
+
+.menu_list_right{
+    
+    line-height: 62px;
+    font-size: 30px;
 }
