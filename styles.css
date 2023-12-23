@@ -124,6 +124,11 @@ font-family: 'Roboto', sans-serif; */
     margin: 150px auto;
     
 }
+
+.button-89>a{
+    text-decoration: none;
+    color: black;
+}
 .button-89 {
     height: 150px;
     width: 300px;
@@ -207,6 +212,8 @@ font-family: 'Roboto', sans-serif; */
     width: 100%;
     right: -100%;
     padding: 70px;
+    background-color: white;
+    height: 100%;
     transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -260,3 +267,53 @@ font-family: 'Roboto', sans-serif; */
     line-height: 62px;
     font-size: 30px;
 }
+
+
+/* PROJECTS SECTION */
+
+
+.Project>img{
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: contain;
+    
+}
+
+.Project{
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.Project>p{
+    padding: 50px;
+}
+
+.Project:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.Projects_list{
+
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+#Project_ContactBtn{    
+    margin: 250px 42%;
+}
+
+
+/* ABOUT SECTION */
+
+.About_section{
+    padding: 50px 200px;
+}
+
