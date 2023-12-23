@@ -8,5 +8,3 @@
 HTML,CSS,Vanilla Javascript
 
 
-#NOTE
-WILL BE UPGRADED FURTHUR
