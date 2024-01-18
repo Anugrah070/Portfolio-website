@@ -5,6 +5,6 @@
 ![Screenshot (24)](https://github.com/Anugrah070/Portfolio-website/assets/71122669/a62179f9-4c2c-490d-815d-e6f679a50e99)
 
 #TECH USED
-HTML,CSS,Vanilla Javascript
+React 
 
 
