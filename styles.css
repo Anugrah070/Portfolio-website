@@ -26,15 +26,17 @@ font-family: 'Roboto', sans-serif; */
 
 .Main_navbar{
     display: flex;
+    padding: 100px;
     align-items: center;
     justify-content: space-between;
-    
+    background-color: black;
 
 }
 
 .Main_Text{
-    
-    margin-top: 300px;
+    background-color: black;
+    padding-top: 200px;
+    padding-bottom: 250px;
     text-align: center;
     color:white;
     
@@ -47,8 +49,6 @@ font-family: 'Roboto', sans-serif; */
     font-weight: 400;
 }
 
-
-
 .Main_Text>h4{
     
     font-family: 'League Spartan', sans-serif;
@@ -58,6 +58,33 @@ font-family: 'Roboto', sans-serif; */
     font-size: 42px
 }
 
+@media (max-width:768px) {
+    .Main_Text>h2{
+        font-size: 100px;
+    }
+
+    .Footer_Section{
+        flex-direction: column;
+    }
+
+    .Main_navbar{
+        padding: 80px;
+        padding: 40px 50px;
+    }
+}
+
+@media (max-width:425px){
+
+    .Main_Text>h2{
+        font-size: 70px;
+    }
+
+    .Main_Text>h4{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
 
 /* MINI ABOUT SECTION */
 
@@ -65,6 +92,7 @@ font-family: 'Roboto', sans-serif; */
 
     display: flex;
     align-items: flex-start;
+    
     gap: 30px;
     flex-direction: column;
     padding: 100px 100px;
@@ -73,8 +101,14 @@ font-family: 'Roboto', sans-serif; */
 
 .mini{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 70px;
+}
+
+.mini>img{
+    width: 400px;
+    height: 400px;
+
 }
 
 .MiniAbout_Heading{
@@ -99,23 +133,93 @@ font-family: 'Roboto', sans-serif; */
     padding: 35px;
 }
 
-.MiniAbout_MySkills_Images{
-    display: flex;
-    flex-wrap: wrap;
+
+ .MiniAbout_MySkills_Images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 90vw;
     gap: 20px;
-    justify-content: space-evenly;
-    
+}
+.MiniAbout_MySkills_ImageBorder>img{
+   width: 150px;
+   height: 150px;
+} 
+
+@media (max-width:800px){
+    .MiniAbout_MySkills_Images{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .MiniAbout_MySkills_ImageBorder>img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
-.MiniAbout_MySkills_ImageBorder>img{
-    width: 150px;
-    height: 150px;
+@media (max-width:459px){
+    .MiniAbout_MySkills_Images{
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+    .MiniAbout_MySkills_ImageBorder>img{
+        width: 50px;
+        height: 50px;
+    }
+    .MiniAbout_MySkills_ImageBorder{
+        width: 110px;
+    }
 }
+
+
+
 
 .MiniAbout_MySkills_ImageBorder>p{
   
     font-family: 'Roboto', sans-serif; 
     font-size: 25px;
+}
+
+@media (max-width:1049px){
+    /* .MiniAbout_MySkills_Images{
+        grid-template-columns: repeat(autofit,minmax(350px,1fr));
+    } */
+
+    .MiniAbout_Section{
+        padding: 100px 30px;
+    }
+
+    .mini>img{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width:863px){
+    .mini{
+        text-align: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .mini>img{
+        width: 400px;
+        height: 400px;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:450px){
+    .MiniAbout_Section{
+        padding: 100px 10px;
+    }
+    .MiniAbout_Content{
+        font-size: 20px;
+    }
+
+    .mini>img{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .buttons{
@@ -167,6 +271,10 @@ font-family: 'Roboto', sans-serif; */
   color: #fff;
 }
 
+
+
+/* FOOTER SECTION */
+
 .Footer_Section{
     display: flex;
     justify-content: space-around;
@@ -202,6 +310,22 @@ font-family: 'Roboto', sans-serif; */
 
 }
 
+@media (max-width:768px){
+    .Footer_Section{
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .Footer_list>ul{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:425px){
+    .Footer_list>ul{
+        gap: 30px;
+    }
+}
 
 
 /* MENU PAGE */

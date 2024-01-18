@@ -1,14 +1,14 @@
 
-export default function Footer(){
+export default function Footer(Props){
 
     return(
-    <footer class="Footer_Section">
+    <footer className="Footer_Section">
         
       <div class="Footer_list">
         <ul>
-          <li><a href="/Pages/projects.html">PROJECTS</a></li>
+          <li><a href="/projects">PROJECTS</a></li>
           <li><a href="/about">ABOUT</a></li>
-          <li><a href="/Pages/contact.html">CONTACT</a></li>
+          <li><a href="/contact">CONTACT</a></li>
         </ul>
       </div>
 

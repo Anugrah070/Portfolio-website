@@ -46,6 +46,9 @@ export default function MiniAbout() {
                 <div class="MiniAbout_MySkills_ImageBorder"><img src="/assets/tech/express.png" alt=""/>
                   <p>ExpressJS</p>
                 </div>
+                <div class="MiniAbout_MySkills_ImageBorder"><img src="/assets/tech/tailwind.png" alt=""/>
+                  <p>Tailwind</p>
+                </div>
             </div>
 
             
@@ -53,8 +56,8 @@ export default function MiniAbout() {
         </div>
 
         <div class="buttons">
-          <button class="button-89" role="button"><a href="/Pages/projects.html">SHOW PROJECTS</a></button>
-        <button class="button-89" role="button"><a href="/Pages/contact.html">CONTACT ME</a></button>
+          <button onClick={()=>{ window.location.href = '/projects'}} class="button-89" role="button">SHOW PROJECTS</button>
+        <button onClick={()=>{ window.location.href = '/contact'}} class="button-89" role="button">CONTACT ME</button>
         </div>
 
         

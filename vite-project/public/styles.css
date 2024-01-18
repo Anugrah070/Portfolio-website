@@ -16,13 +16,12 @@ font-family: 'Roboto', sans-serif; */
 
 .Main_Section{
     /* display: block; */
-    opacity: 1;
     padding: 70px;
     background-color: black;
     height: 950px;
     position: relative;
-    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
 
 .Main_navbar{
     display: flex;
@@ -30,7 +29,9 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
     justify-content: space-between;
     background-color: black;
-
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .Main_Text{
@@ -39,6 +40,9 @@ font-family: 'Roboto', sans-serif; */
     padding-bottom: 250px;
     text-align: center;
     color:white;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     
 }
 
@@ -123,6 +127,7 @@ font-family: 'Roboto', sans-serif; */
 .MiniAbout_Content{
     line-height: 40px;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
     font-size: 25px;
 }
 
@@ -140,6 +145,7 @@ font-family: 'Roboto', sans-serif; */
     width: 90vw;
     gap: 20px;
 }
+
 .MiniAbout_MySkills_ImageBorder>img{
    width: 150px;
    height: 150px;
@@ -334,11 +340,12 @@ font-family: 'Roboto', sans-serif; */
     position: fixed;
     top: 0;
     width: 100%;
-    right: -100%;
     padding: 70px;
     background-color: white;
     height: 100%;
-    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .menu_section>img{
@@ -351,10 +358,10 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    position:relative;
 }
 
 .menu_list_left{
+    position:relative;
     display: flex;
     gap: 20px;
 }
@@ -382,8 +389,35 @@ font-family: 'Roboto', sans-serif; */
     font-weight: 500;
     top: 33px;
     position: absolute;
-    left: 43px;
+    left: -120px;
     transform: rotate(-90deg);
+}
+
+@media(max-width:768px){
+    .rotate{
+        font-size: 24px;
+        left: -70px;
+    }
+    .menu_list_left>ul>li{
+        font-size: 30px;
+    }
+
+    .menu_list_left>ul{
+        gap: 48px;
+    }
+
+    .menu_main{
+        gap: 47px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:375px){
+    .menu_list_right>p{
+        line-height: 46px;
+        font-size: 21px;
+    }
 }
 
 .menu_list_right{
@@ -434,6 +468,55 @@ font-family: 'Roboto', sans-serif; */
     margin: 250px 42%;
 }
 
+@media(max-width:1024px){
+    #Project_ContactBtn{    
+        margin: 250px 33%;
+    }
+}
+@media(max-width:900px){
+    #Project_ContactBtn{    
+        margin: 250px 27%;
+    }
+
+}
+@media(max-width:768px){
+
+    .Projects_list{
+        display: grid;
+        align-items: center;
+
+    }
+    
+    #Project_ContactBtn{    
+        margin: 250px 23%;
+    }
+
+}
+@media(max-width:553px){
+    #Project_ContactBtn{    
+        margin: 250px 17%;
+    }
+
+}
+@media(max-width:438px){
+    #Project_ContactBtn{    
+        margin: 250px 10%;
+    }
+    .Project>p {
+        padding: 6px;
+    } 
+
+}
+@media(max-width:320px){
+    #Project_ContactBtn{   
+        margin: 70px 1%;
+    }
+
+    .Project>p {
+        padding: 6px;
+    } 
+
+}
 
 /* ABOUT SECTION */
 
@@ -441,3 +524,48 @@ font-family: 'Roboto', sans-serif; */
     padding: 50px 200px;
 }
 
+@media(max-width:768px){
+    .About_section{
+        padding: 50px 30px;
+    }
+    .MiniAbout_Heading {
+        font-size: 56px;
+    }
+
+}
+
+@media(max-width:450px){
+    .About_section{
+        font-size: 20px;
+    }
+
+    .MiniAbout_Heading {
+        font-size: 30px;
+    }
+
+    .MiniAbout_Content{
+        line-height: 32px;
+    }
+}
+
+.hide {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out 0.1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+  
+.menu_list_right>img {
+    background-color: black;
+    width: 79px;
+    padding: 14px;
+    margin: 8px ;
+    cursor: pointer;
+    border-radius: 20px;
+}
